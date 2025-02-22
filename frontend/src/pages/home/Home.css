@@ -1,0 +1,26 @@
+.home .background {
+  z-index: 1;
+  width: 98vw;
+  vertical-align: middle;
+}
+.home .banner .home-title {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 0;
+  opacity: 90%;
+}
+.home .banner .signin-button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5px;
+  font-size: medium;
+  text-decoration: none;
+  font-size: 2em;
+}/*# sourceMappingURL=Home.css.map */

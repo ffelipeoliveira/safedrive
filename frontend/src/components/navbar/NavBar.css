@@ -1,0 +1,26 @@
+.navbar {
+  width: 99w;
+  height: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  z-index: 999;
+  position: sticky;
+  /* https://smoothshadows.com/#djEsMSwzLDAuMDQsMjEsMjUsMCwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+}
+.navbar .subnavbar {
+  display: flex;
+}
+.navbar .subnavbar .item {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 10px;
+}
+.navbar .icon {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.navbar .subIcon {
+  vertical-align: middle;
+  margin-right: 5px;
+}/*# sourceMappingURL=NavBar.css.map */

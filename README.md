@@ -17,6 +17,8 @@
    1. Type `npx hardhat node` to initiate the local Blockchain, **keep this terminal open**.
    2. In another terminal, type `npx hardhat run ignition/modules/deploy.js --network localhost` to deploy smartcontract on the network
    3. Type `node app/server.js` to initiate a local server to the Blockchain, **keep this terminal open**.
+   
+   
 5. #### Downloading the Frontend
     1. In another terminal `safedrive-frontend`, you can do it using `cd safedrive-backend`.  
     2. Type `npm install` and wait until it finishes installing the node modules.

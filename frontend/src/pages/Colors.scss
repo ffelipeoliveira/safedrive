@@ -1,0 +1,318 @@
+$base-color: #ffffffe1;
+$primary-color: #26d7ff;
+$secondary-color: #22b0d4;
+$background-color: #6b6b6b;
+$font-color: #1c1c1c;
+$error-color: #be3232;
+$success-color: #34bb92;
+
+$default-font-size: 15px;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+	margin: 0;
+	background-color: $base-color;
+	font-family: 'Roboto','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: $font-color;
+
+	h1 {
+		font-family: 'Poppins', 'Courier New', Courier, monospace;
+	}
+
+	button {
+		background-color: unset;
+		transition: all 0.2s;
+		width: 8em;
+		border: none;
+		cursor: pointer;
+		&:hover {
+			background-color: $font-color;
+			color: $base-color;
+		}
+	}
+
+	.status {
+		background-color: $base-color;
+	}
+
+	.button-oneline {
+		width: 14em;
+		white-space: nowrap;
+		.oneline-icon {
+			font-size: 19px;
+			align-self: center;
+		}
+	}
+
+	a {
+		font-family: 'Roboto','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		color: $font-color;
+		text-decoration: underline;
+		transition: all 0.2s;
+		padding: 2px;
+		&:hover {
+			text-decoration: none;
+			background-color: $font-color;
+			color: $base-color;
+		}
+	}
+
+	.logo {
+		img {
+			transition: all 0.2s;
+		}
+		&:hover {
+			background-color: transparent;
+			text-decoration: none;
+			img {
+				transition: all 0.2s;
+				width: 140px;
+			}
+		}
+	}
+
+	ul {
+		list-style: none;
+		padding: unset;
+		margin: unset;
+	}
+	
+	li {
+		padding: 2px;
+		transition: all 0.2s;
+		background-color: $base-color;
+		&:hover {
+			background: $background-color;
+			color: $base-color;
+			cursor: pointer;
+			a {
+				color: $base-color;
+			}
+		}
+		a {
+			&:hover {
+				background-color: unset;
+			}
+		}
+	}
+
+	.navbar {
+		background-color: $base-color;
+		backdrop-filter: blur(10px);
+	}
+
+	.home-title {
+		color: $font-color;
+	}
+
+	.signin-button {
+		background-color: $base-color;
+		color: $font-color;
+		border: 1px $base-color; 
+	}
+
+	.inverted-background-button {
+		background: $font-color;
+		color: $base-color;
+		mix-blend-mode: multiply;
+		opacity: 90%;
+		&:hover {
+			background: $base-color;
+			color: $font-color;
+			mix-blend-mode: screen;
+		}
+	}
+
+	.inverted-background {
+		background: $font-color;
+		width: fit-content;
+		color: $base-color;
+		mix-blend-mode: multiply;
+		font-weight: 600;
+	}
+
+	.inverted-background-button {
+		background: $font-color;
+		color: $base-color;
+		mix-blend-mode: multiply;
+		font-weight: 600;
+		transition: all .5s;
+		&:hover {
+			background: $base-color;
+			color: $font-color;
+			mix-blend-mode: screen;
+			transition: all .5s;
+		}
+	}
+
+	.form {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 400px;
+		padding: 10px 40px 10px 40px;
+		transform: translate(-50%, -50%);
+		background: $base-color;
+		box-sizing: border-box;
+		backdrop-filter: blur(4px);
+	}
+
+	.form-horizontal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 500px;
+		padding: 10px 40px 80px 40px;
+		transform: translate(-50%, -50%);
+		background: $base-color;
+		box-sizing: border-box;
+		backdrop-filter: blur(4px);
+	}
+
+	.metamask {
+		z-index: 999;
+		background-color: $font-color;
+		color: $base-color;
+		position: absolute;
+		left: 50%;
+		bottom: 23%;
+		width: 400px;
+		height: 30px;
+		transform: translateX(-50%);
+	}
+
+	.connected {
+		background-color: $background-color;
+		pointer-events: none;
+	}
+
+	.home-banner {
+		height: 100vh;
+		max-width: 100vw;
+		overflow-x: hidden;
+	}
+
+	.subtext {
+		margin-top: 50px;
+		font-size: 15px;
+	}
+
+	.title {
+		text-align: center;
+	}
+
+	.flex {
+		display: flex;
+	}
+
+	.panel {
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 20%;
+		width: 300px;
+		padding: 10px 40px 10px 40px;
+		transform: translate(-50%, -50%);
+		background: $base-color;
+		box-sizing: border-box;
+		backdrop-filter: blur(4px);
+		li {
+			background-color: transparent;
+			color: $font-color;
+			cursor: default;
+		}
+	}
+
+	fieldset {
+		margin-top: 5px;
+		border: none;
+	}
+
+	.background {
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.signin_button {
+		defs, rect {
+			fill: $base-color;
+		}
+
+	}
+
+	.select {
+		border: solid 1px $font-color;
+		background-color: transparent;
+		display:flex;
+		flex-direction: column;
+		position:relative;
+		outline: none;
+		padding: 3px;
+		width:100%;
+	}
+
+	.buttons {
+		margin-top: 10px;
+		width: min-content;
+		margin-left: auto;
+		margin-right: auto;
+		align-items: center;
+		text-align: center;
+		display: flex;
+	}
+
+	.divider {
+		margin: 10px;
+	}
+	
+	.error {
+		color: $error-color;
+	}
+
+	.input {
+		display: flex;
+  		flex-direction: column-reverse;
+		position: relative;
+	}
+
+	legend {
+		background-color: $font-color;
+		color: $base-color;
+		font-size: $default-font-size - 2;
+	}
+
+	.input-label {
+		transition: all 0.3s;
+		position: absolute;
+		font-size: 18px;
+		top: 22px;
+		font-size: $default-font-size;
+	}
+
+	.input-field {
+		font-size: $default-font-size;
+		width: 100%;
+		margin-top: 20px;
+		border: none;
+		border-bottom: 2px solid $font-color;
+		outline: none;
+		background: transparent;
+		transition: all 0.2s;
+		&:focus {
+			border-bottom: 2px solid $secondary-color;
+			~ .input-label {
+				color: $secondary-color;
+				top: 3px;
+				font-size: 13px;
+			}
+		}
+		&:valid {
+			~ .input-label {
+				top: 3px;
+				font-size: 13px;
+			}
+		}
+	}
+}

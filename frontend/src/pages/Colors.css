@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.8823529412);
+  font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #1c1c1c;
+}
+body h1 {
+  font-family: "Poppins", "Courier New", Courier, monospace;
+}
+body button {
+  background-color: unset;
+  transition: all 0.2s;
+  width: 8em;
+  border: none;
+  cursor: pointer;
+}
+body button:hover {
+  background-color: #1c1c1c;
+  color: rgba(255, 255, 255, 0.8823529412);
+}
+body .status {
+  background-color: rgba(255, 255, 255, 0.8823529412);
+}
+body .button-oneline {
+  width: 14em;
+  white-space: nowrap;
+}
+body .button-oneline .oneline-icon {
+  font-size: 19px;
+  align-self: center;
+}
+body a {
+  font-family: "Roboto", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #1c1c1c;
+  text-decoration: underline;
+  transition: all 0.2s;
+  padding: 2px;
+}
+body a:hover {
+  text-decoration: none;
+  background-color: #1c1c1c;
+  color: rgba(255, 255, 255, 0.8823529412);
+}
+body .logo img {
+  transition: all 0.2s;
+}
+body .logo:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+body .logo:hover img {
+  transition: all 0.2s;
+  width: 140px;
+}
+body ul {
+  list-style: none;
+  padding: unset;
+  margin: unset;
+}
+body li {
+  padding: 2px;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.8823529412);
+}
+body li:hover {
+  background: #6b6b6b;
+  color: rgba(255, 255, 255, 0.8823529412);
+  cursor: pointer;
+}
+body li:hover a {
+  color: rgba(255, 255, 255, 0.8823529412);
+}
+body li a:hover {
+  background-color: unset;
+}
+body .navbar {
+  background-color: rgba(255, 255, 255, 0.8823529412);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body .home-title {
+  color: #1c1c1c;
+}
+body .signin-button {
+  background-color: rgba(255, 255, 255, 0.8823529412);
+  color: #1c1c1c;
+  border: 1px rgba(255, 255, 255, 0.8823529412);
+}
+body .inverted-background-button {
+  background: #1c1c1c;
+  color: rgba(255, 255, 255, 0.8823529412);
+  mix-blend-mode: multiply;
+  opacity: 90%;
+}
+body .inverted-background-button:hover {
+  background: rgba(255, 255, 255, 0.8823529412);
+  color: #1c1c1c;
+  mix-blend-mode: screen;
+}
+body .inverted-background {
+  background: #1c1c1c;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgba(255, 255, 255, 0.8823529412);
+  mix-blend-mode: multiply;
+  font-weight: 600;
+}
+body .inverted-background-button {
+  background: #1c1c1c;
+  color: rgba(255, 255, 255, 0.8823529412);
+  mix-blend-mode: multiply;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+body .inverted-background-button:hover {
+  background: rgba(255, 255, 255, 0.8823529412);
+  color: #1c1c1c;
+  mix-blend-mode: screen;
+  transition: all 0.5s;
+}
+body .form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 10px 40px 10px 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8823529412);
+  box-sizing: border-box;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+body .form-horizontal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  padding: 10px 40px 80px 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8823529412);
+  box-sizing: border-box;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+body .metamask {
+  z-index: 999;
+  background-color: #1c1c1c;
+  color: rgba(255, 255, 255, 0.8823529412);
+  position: absolute;
+  left: 50%;
+  bottom: 23%;
+  width: 400px;
+  height: 30px;
+  transform: translateX(-50%);
+}
+body .connected {
+  background-color: #6b6b6b;
+  pointer-events: none;
+}
+body .home-banner {
+  height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body .subtext {
+  margin-top: 50px;
+  font-size: 15px;
+}
+body .title {
+  text-align: center;
+}
+body .flex {
+  display: flex;
+}
+body .panel {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 300px;
+  padding: 10px 40px 10px 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8823529412);
+  box-sizing: border-box;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+body .panel li {
+  background-color: transparent;
+  color: #1c1c1c;
+  cursor: default;
+}
+body fieldset {
+  margin-top: 5px;
+  border: none;
+}
+body .background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+body .signin_button defs, body .signin_button rect {
+  fill: rgba(255, 255, 255, 0.8823529412);
+}
+body .select {
+  border: solid 1px #1c1c1c;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+}
+body .buttons {
+  margin-top: 10px;
+  width: -moz-min-content;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+body .divider {
+  margin: 10px;
+}
+body .error {
+  color: #be3232;
+}
+body .input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+}
+body legend {
+  background-color: #1c1c1c;
+  color: rgba(255, 255, 255, 0.8823529412);
+  font-size: 13px;
+}
+body .input-label {
+  transition: all 0.3s;
+  position: absolute;
+  font-size: 18px;
+  top: 22px;
+  font-size: 15px;
+}
+body .input-field {
+  font-size: 15px;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  border-bottom: 2px solid #1c1c1c;
+  outline: none;
+  background: transparent;
+  transition: all 0.2s;
+}
+body .input-field:focus {
+  border-bottom: 2px solid #22b0d4;
+}
+body .input-field:focus ~ .input-label {
+  color: #22b0d4;
+  top: 3px;
+  font-size: 13px;
+}
+body .input-field:valid ~ .input-label {
+  top: 3px;
+  font-size: 13px;
+}/*# sourceMappingURL=Colors.css.map */
